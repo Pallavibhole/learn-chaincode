@@ -118,7 +118,7 @@ func (t *SimpleChaincode) adddetails(stub shim.ChaincodeStubInterface, args []st
 	if len(args) != 4 {
 		return nil, errors.New("Incorrect Number of arguments.Expecting 4 for adddetails")
 	}
-	amt, err := strconv.ParseFloat(args[1], 64)
+	//amt, err := strconv.ParseFloat(args[1], 64)
 	
 
 	employee := Employee{
