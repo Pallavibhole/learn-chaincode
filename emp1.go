@@ -125,7 +125,7 @@ func (t *SimpleChaincode) adddetails(stub shim.ChaincodeStubInterface, args []st
 		EmpName:   args[0],
 		EmpId: args[1],
 		Place: args[2],
-		Phoneno: args[3],
+		PhoneNo: args[3],
 	}
 
 	bytes, err := json.Marshal(employee)
