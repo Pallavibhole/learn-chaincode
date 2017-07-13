@@ -13,9 +13,9 @@ import (
 //Product - Structure for products used in buy goods
 type Employee struct {
 	EmpName string  `json:"empname"`
-	EmpId int64 `json:"empid"`
+	EmpId string `json:"empid"`
 	Place string  `json:"place"`
-	PhoneNo int64 `json:"phoneno"`
+	PhoneNo string `json:"phoneno"`
 }
 
 // SimpleChaincode example simple Chaincode implementation
