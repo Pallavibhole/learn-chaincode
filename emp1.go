@@ -157,6 +157,18 @@ func (t *SimpleChaincode) readdetails(stub shim.ChaincodeStubInterface, args []s
 		fmt.Println("Error retrieving " + key)
 		return nil, errors.New("Error retrieving " + key)
 	}
+	
+/*func (t *SimpleChaincode) Logging(stub shim.ChaincodeStubInterface, args []string) ([]byte, error)){
+	fmt.Println("Participant Logging")
+	if len(args) != 3 {
+		return nil, errors.New("Incorrect Number of arguments.Expecting 3 for Logging")
+	}
+	loggoing := logging{
+		UserId: args[0],
+		Pwd: args[1],
+		ChainId: args[2],
+	}*/
+		
 	/*
 	product := Product{}
 	err = json.Unmarshal(bytes, &product)
